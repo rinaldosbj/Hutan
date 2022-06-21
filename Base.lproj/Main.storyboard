@@ -1,0 +1,1544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TZk-gh-JdO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose class-->
+        <scene sceneID="08g-F3-63M">
+            <objects>
+                <viewController title="Choose class" id="nfw-AS-1ad" customClass="GuideViewController" customModule="Hutan_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bFT-uL-qgE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-YY-YeR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="291"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Learn more about your pet's needs!" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9wc-SX-H6J">
+                                <rect key="frame" x="20" y="88" width="374" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="0.19607843137254902" green="0.28235294117647058" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4D-u1-FCv">
+                                <rect key="frame" x="20" y="474" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Domestic" image="paw.fill" backgroundImage="Botão grande">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.41568627450000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" image="button.bird" imagePlacement="top" imagePadding="0.0" titleAlignment="automatic">
+                                    <backgroundConfiguration key="background" image="Botão grande" imageContentMode="scaleToFill" strokeWidth="150"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Bird">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.30196078430000001" green="0.41568627450000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Bp9-NS-veJ" kind="push" id="Q7X-6b-SFG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kic-G7-zwl">
+                                <rect key="frame" x="244" y="474" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Domestic" image="paw.fill" backgroundImage="Botão grande">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.41568627450000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" image="button.fish" imagePlacement="top" imagePadding="0.0" titleAlignment="automatic">
+                                    <backgroundConfiguration key="background" image="Botão grande" imageContentMode="scaleToFill" strokeWidth="150"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Aquatic">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.30196078430000001" green="0.41568627450000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Ira-AN-0E0" kind="push" id="Jzo-Ck-y9y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSw-Wv-7Jw">
+                                <rect key="frame" x="20" y="632" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Domestic" image="paw.fill" backgroundImage="Botão grande">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.41568627450000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" image="button.bug" imagePlacement="top" imagePadding="0.0" titleAlignment="automatic">
+                                    <backgroundConfiguration key="background" image="Botão grande" imageContentMode="scaleToFill" strokeWidth="150"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Bug">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.30196078430000001" green="0.41568627450000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="6Tu-WY-59G" kind="push" id="a4Q-cE-IZ3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJU-wH-R6O">
+                                <rect key="frame" x="244" y="632" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Domestic" image="paw.fill" backgroundImage="Botão grande">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.41568627450000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" image="button.star" imagePlacement="top" imagePadding="0.0" titleAlignment="automatic">
+                                    <backgroundConfiguration key="background" image="Botão grande" imageContentMode="scaleToFill" strokeWidth="150"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Exotic">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.30196078430000001" green="0.41568627450000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="jDo-YL-CbI" kind="push" id="HZB-8c-ZY9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yc9-bN-Pjf">
+                                <rect key="frame" x="244" y="316" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Domestic" image="paw.fill" backgroundImage="Botão grande">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.41568627450000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" image="button.snake" imagePlacement="top" imagePadding="0.0" titleAlignment="automatic">
+                                    <backgroundConfiguration key="background" image="Botão grande" imageContentMode="scaleToFill" strokeWidth="150"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Reptile">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.30196078430000001" green="0.41568627450000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="TJb-rN-lNF" kind="push" id="v0P-VC-if2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose the class that your pet fits in the most:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxV-M2-3XB">
+                                <rect key="frame" x="20" y="216" width="274" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHC-tj-4J1">
+                                <rect key="frame" x="20" y="316" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Domestic" image="paw.fill" backgroundImage="Botão grande">
+                                    <color key="titleColor" red="0.30196078430000001" green="0.41568627450000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" image="button.paw" imagePlacement="top" imagePadding="0.0" titleAlignment="automatic">
+                                    <backgroundConfiguration key="background" image="Botão grande" imageContentMode="scaleToFill" strokeWidth="150"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Domestic">
+                                            <attributes>
+                                                <font key="NSFont" size="19" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" red="0.30196078430000001" green="0.41568627450000001" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="cbQ-Ci-oOJ" kind="push" id="row-cE-bTc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PSs-xc-uiP"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.96862745098039216" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="brz-6B-NJj"/>
+                    <connections>
+                        <outlet property="aquaticButton" destination="kic-G7-zwl" id="g7i-yz-w7a"/>
+                        <outlet property="birdButton" destination="a4D-u1-FCv" id="Slf-Np-4xT"/>
+                        <outlet property="bugButton" destination="iSw-Wv-7Jw" id="8fg-f3-cPJ"/>
+                        <outlet property="domesticButton" destination="hHC-tj-4J1" id="NPT-uS-idj"/>
+                        <outlet property="exoticButton" destination="VJU-wH-R6O" id="iRZ-sc-75X"/>
+                        <outlet property="headerGuideImage" destination="gQb-YY-YeR" id="DKb-EB-uK0"/>
+                        <outlet property="reptileButton" destination="yc9-bN-Pjf" id="uCS-h6-TFV"/>
+                        <outlet property="subtitleGuideLabel" destination="pxV-M2-3XB" id="Kdw-EW-vSO"/>
+                        <outlet property="titleGuideLabel" destination="9wc-SX-H6J" id="GXN-oy-GZD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p9M-vY-jQY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1940.5797101449277" y="-583.25892857142856"/>
+        </scene>
+        <!--Domestic-->
+        <scene sceneID="emR-Kc-oDh">
+            <objects>
+                <viewController title="Domestic" id="cbQ-Ci-oOJ" customClass="DomesticViewController" customModule="Hutan_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fKy-7F-cbz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="mUi-hC-Ftn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taking care of Domestic pets" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RJE-cB-fCQ">
+                                <rect key="frame" x="20" y="100" width="300" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APj-bN-pcR">
+                                <rect key="frame" x="20" y="240" width="374" height="553"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">• About the Transport
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">The transport of pets is not a very easy task, having to make sure your pet’s eligibility for travel, having the right kennel for your pet, these and every other small details have to be closely inspected for your pet to be safe. For that you need to contact your animal's veterinarian, he will check those details for you!
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">• About the correct food
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Domestic pets, like other animals, including humans, like to eat the food that best satisfies their taste, but sometimes just because your pet eats something and enjoys it doesn't mean it meets their nutritional needs. It is usually recommended not to give leftovers to any pet. To learn more about this contact your animal's veterinarian, he will certainly send you a diet for your pet, so that you can optimize your pet's lifespan.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="• About the correct housing">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Every domestic animal needs a place to live, you as an owner need to make sure that the place where your animal spends most of its time is safe, if it is hygienic and clean, if it meets your pet's need for fun, if it don’t makes it feels alone and last but not least if there is more than enough space for the pet walk and run if necessary.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="• About the pet’s fun">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Pets loves to have fun, going out for a walk, having a partner to play and having a bunch of toys can be very entertaining for your pet. It’s very important to you to know your pet, pets also haves personalities, that means that what some kind of pet likes may not be what your pet enjoys to do.</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yye-bc-gRX"/>
+                        <color key="backgroundColor" red="0.9529411793" green="0.96862745289999996" blue="0.98823523520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8IT-Uk-Thb"/>
+                    <connections>
+                        <outlet property="contentDomesticText" destination="APj-bN-pcR" id="Zdp-FS-jij"/>
+                        <outlet property="headerDomesticImage" destination="mUi-hC-Ftn" id="3ll-vL-2B1"/>
+                        <outlet property="titleDomesticLabel" destination="RJE-cB-fCQ" id="Sdc-sz-OWT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zny-Rm-1lX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2902.898550724638" y="-1232.1428571428571"/>
+        </scene>
+        <!--Bird-->
+        <scene sceneID="6w6-at-Ozr">
+            <objects>
+                <viewController title="Bird" id="Bp9-NS-veJ" customClass="BirdViewController" customModule="Hutan_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="48s-lO-fof">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="uqg-Zn-f2f">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taking care of Bird pets" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0lO-A8-WDW">
+                                <rect key="frame" x="20" y="100" width="300" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9x0-43-9hp">
+                                <rect key="frame" x="20" y="240" width="374" height="553"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> About the Transport
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">The transport of pets is not a very easy task, having to make sure your pet’s eligibility for travel, having the right cage for your pet, these and every other small details have to be closely inspected for your pet to be safe. For that you need to contact your veterinarian’s pet, he will check those details for you!   Transporting birds can be very stressful, even more depending of its size, having a good sized cage with the necessary amount of space for the bird be calm and relaxed is super important, you also need to make sure you pet is enjoying the trip, with some nice food and no loud noises.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="About the correct food">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Birds, like other animals, including humans, like to eat the food that best satisfies their taste, but sometimes just because your pet eats something and enjoys it doesn't mean it meets their nutritional needs. It is usually recommended not to give leftovers to any pet, they are well known as a pet that is very sensible with their food, buying some random seeds or giving some random vegetables to your bird can be very risky, birds needs extra nutricional attention, its recommended to contact your animal's veterinarian, he will certainly send you a diet for your pet, so that you can optimize your pet's lifespan.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" About the correct housing">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Every bird needs a place to live, you as an owner need to make sure that the place where your animal spends most of its time is safe, if it is hygienic and clean, if it meets your pet's need for fun and if it don’t makes it feels alone.
+Beginners bird ”owners” have a very common habit of buying some random cage or choosing for the smallest or cheapest one on the store, thinking that just because your pet  "fits” its enough, but this is not quite real. Choosing the incorrect cage can be very harmful and can decrease considerably your pet's lifespan. Ideally, the space should be twice as large as the length of the bird with open wings. This will allow the animal to take small flights and feel more comfortable. It is important to keep in mind that this does not mean that the bird should not be released periodically.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" About the pet's fun">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Pets loves to have fun, going out for a walk, having a partner to play and having a bunch of toys (Piñatas, Problem Solving or Foraging Toys, Exercise Toys and Noisy Toys) can be very entertaining for your pet. It’s very important to you to know your pet, pets also haves personalities, that means that what some kind of pet likes may not be what your pet enjoys to do.</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="POw-9w-hJz"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.96862745100000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d9g-xI-qKG"/>
+                    <connections>
+                        <outlet property="contentBirdText" destination="9x0-43-9hp" id="ERj-Zh-nDq"/>
+                        <outlet property="headerBirdImage" destination="uqg-Zn-f2f" id="nmT-nu-1KT"/>
+                        <outlet property="titleBirdLabel" destination="0lO-A8-WDW" id="byn-T5-1i1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FFX-1M-tWi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2902.898550724638" y="-583.25892857142856"/>
+        </scene>
+        <!--Aquatic-->
+        <scene sceneID="Nme-Ni-x4E">
+            <objects>
+                <viewController title="Aquatic" id="Ira-AN-0E0" customClass="AquaticViewController" customModule="Hutan_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hhb-jW-q32">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="SQ9-Ms-7Z7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taking care of Aquatic pets" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SOP-rM-I4Y">
+                                <rect key="frame" x="20" y="100" width="300" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3v-mh-RQq">
+                                <rect key="frame" x="20" y="240" width="374" height="553"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> About the Transport
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">The transport of pets is not a very easy task, having to make sure your pet’s eligibility for travel, having the right aquarium  for your pet, these and every other small details have to be closely inspected for your pet to be safe. For that you need to contact your animal's veterinarian, he will check those details for you!
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> About the correct food
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Aquatic pets, like other animals, including humans, like to eat the food that best satisfies their taste, but sometimes just because your pet eats something and enjoys it doesn't mean it meets their nutritional needs. It is recommended not to give leftovers to any aquatic pet. For fish its usually recommended to give then nutricional pellets, just watch out because the amount of pellets you give can’t exceed the amount your fish eats, because it can make your aquarium dirty. To learn more about this contact your animal's veterinarian, he will certainly send you a diet for your pet, so that you can optimize your pet's lifespan.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> About the correct housing
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Every aquatic animal needs a place to live, usually an aquarium or a pond, you as an owner need to make sure that the place where your animal spends most of its time is safe, if there is enough water, if the PH of the water is correct, if the illumination is correct, if it is hygienic and clean, if the water is not too salty or not, if it meets your pet's need for fun, if it don’t makes it feels alone and last but not least if there is more than enough space for the pet swim and hide if necessary. A rule of a thumb says that “This rule says that for each inch of fish you'd like to keep, your tank should be able to hold 1 gallon of water.”, but anyways, in order to be sure your aquarium is comfortable and accommodating to all the fish you'd like to keep, it's important to do your research. Thoroughly investigating different fish types and their environmental requirements is the best way to ensure that you create the safest, most comfortable home for your fish.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> About the pet’s fun
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Animal loves to have fun, but fish don’t really have this need. They enjoy their living, so if the environment he is living is great he is having fun by that. It’s very important to you to know your pet, pets also haves personalities, that means that what some kind of pet likes may not be what your pet enjoys to do.</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PU5-79-h6g"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.96862745100000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hbM-Yz-djE"/>
+                    <connections>
+                        <outlet property="contentAquaticText" destination="O3v-mh-RQq" id="tBE-Sb-FcC"/>
+                        <outlet property="headerAquaticImage" destination="SQ9-Ms-7Z7" id="E6w-7r-Flc"/>
+                        <outlet property="titleAquaticLabel" destination="SOP-rM-I4Y" id="nBv-Fd-w6b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vvz-vK-Gnh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3605.7971014492755" y="-583.25892857142856"/>
+        </scene>
+        <!--Repitile-->
+        <scene sceneID="xNP-EP-qBT">
+            <objects>
+                <viewController title="Repitile" id="TJb-rN-lNF" customClass="ReptileViewController" customModule="Hutan_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CmF-31-fRm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="Btb-aB-EhM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taking care of Reptile pets" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="98U-39-LRF">
+                                <rect key="frame" x="20" y="100" width="300" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZt-D4-3CO">
+                                <rect key="frame" x="20" y="240" width="374" height="553"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="• ">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="About the Transport">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+The transport of pets is not a very easy task, having to make sure your pet’s eligibility for travel, have the right kennel or terrarium for your pet, these and every other small details have to be closely inspected for your pet to be safe. For that you need to contact your animal's veterinarian, he will check those details for you!</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" About the correct food">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Reptile, like other animals, including humans, like to eat the food that best satisfies their taste, but sometimes just because your pet eats something and enjoys it doesn't mean it meets their nutritional needs. It is usually recommended not to give leftovers to any pet. Reptiles haves a very sensible diet usually composed with bugs (for the carnivores) or selected leafs (for the herbivores), to learn more about this contact your animal's veterinarian, he will certainly send you a diet for your pet, so that you can optimize your pet's lifespan.</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" About the correct ">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">housing
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Every reptile needs a place to live, usually a terrarium, you as an owner need to make sure that the place where your animal spends most of its time is safe, if the temperature is correct, if it’s wet enough, if it is hygienic and clean, if it meets your pet's need for fun, if it don’t makes it feels alone and last but not least if there is more than enough space for the pet walk, run and swim if necessary.</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" About the pet’s fun">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Reptiles loves to have fun, having a partner to play and having a bunch of toys can be very entertaining for your pet. It’s very important to you to know your pet, some times reptiles wants privacy, thats when it’s not recommended to play with. Pets also haves personalities, that means that what some kind of pet likes may not be what your pet enjoys to do.</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WFN-bt-AEr"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.96862745100000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wwy-0q-bJS"/>
+                    <connections>
+                        <outlet property="contentReptileText" destination="sZt-D4-3CO" id="ubJ-ty-rzW"/>
+                        <outlet property="headerReptileImage" destination="Btb-aB-EhM" id="J5Q-ff-aSt"/>
+                        <outlet property="titleReptileLabel" destination="98U-39-LRF" id="RiK-QX-reE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qzd-6I-gMP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3605.7971014492755" y="-1234.1517857142856"/>
+        </scene>
+        <!--Daily News-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hutan_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="Oh6-yO-E9g">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daily pet Info" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nel-YN-LWi">
+                                <rect key="frame" x="20" y="112" width="241.5" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="orangotango 1" translatesAutoresizingMaskIntoConstraints="NO" id="hcn-Jb-V1R">
+                                <rect key="frame" x="20" y="223" width="374" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sVe-u4-y5B">
+                                <rect key="frame" x="20" y="412" width="374" height="381"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">The name orangutan derives from Orang and Huntan, which comes from the Malay language, and means Man and Forest, respectively, probably due to their similar appearance to humans.
+Orangutans spend most of their time alone, in the trees of tropical forests (their natural habitat), waiting until it is time to mate to find others of their kind.
+They are the largest mammals that live in trees and can reach up to 1.5m when standing. They can be found in only two places in the world: on the island of Sumantra, in Indonesia, and on the island of Borneo, in the Malay and indonesians.
+Birds are not the only animals that build nests. Orangutans also build to sleep in the trees they live in.
+Orangutans are omnivorous, but eat mostly fruit.
+If we don't change the way we interfere with the environment, we run the risk of soon losing the orangutans. That's because scientists estimate that climate change and shrinking land space will destroy between 68% and 81% of orangutans' remaining habitat by 2080.
+Both orangutan species are threatened with extinction. The Borneo orangutan is listed as Endangered and the Sumatran orangutan is listed as Critically Endangered.
+Human behavior is destroying orangutan habitat. As they are heavily dependent on trees, orangutans are vulnerable to the effects of logging.
+
+</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Font: https://www.worldanimalprotection.org.br/blogs/8-fatos-sobre-os-orangotangos">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.96862745098039216" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Daily News" image="newspaper.fill" selectedImage="newspaper.fill" id="39y-4l-Eeo"/>
+                    <connections>
+                        <outlet property="headerImage" destination="Oh6-yO-E9g" id="Ppf-4t-dQN"/>
+                        <outlet property="infoTitleLabel" destination="Nel-YN-LWi" id="Jlt-fI-ToY"/>
+                        <outlet property="newsImage" destination="hcn-Jb-V1R" id="LgE-cy-9ox"/>
+                        <outlet property="newsText" destination="sVe-u4-y5B" id="0I0-hf-Kdy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="93.75"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ayS-4O-AnZ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="TZk-gh-JdO" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="OJN-5h-XaY">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.30196078431372547" green="0.41568627450980389" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                        <tabBarAppearance key="standardAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="g1a-wa-RFO"/>
+                        <segue destination="uGL-9Z-3Ju" kind="relationship" relationship="viewControllers" id="e7a-rp-bCT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwz-lH-rNA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-109" y="-270"/>
+        </scene>
+        <!--Guide-->
+        <scene sceneID="GKF-Wh-qdd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uGL-9Z-3Ju" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Guide" image="magnifyingglass" selectedImage="magnifyingglass" id="YXf-Mw-1Sq">
+                        <color key="badgeColor" red="0.1960784314" green="0.28235294119999998" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NWu-q1-eXd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nfw-AS-1ad" kind="relationship" relationship="rootViewController" id="Nqz-rn-vDA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yWt-uY-Fwx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="-583.25892857142856"/>
+        </scene>
+        <!--Bug-->
+        <scene sceneID="nHg-z7-kdC">
+            <objects>
+                <viewController title="Bug" id="6Tu-WY-59G" customClass="BugViewController" customModule="Hutan_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XEs-Jj-Xsc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="j86-nY-ttQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taking care of Bug pets" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gW-zF-QOE">
+                                <rect key="frame" x="20" y="100" width="300" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nw5-ts-vYY">
+                                <rect key="frame" x="20" y="240" width="374" height="553"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> About the Transport
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">The transport of pets is not a very easy task, specially for bugs that are very sensible animals, having to make sure your pet’s eligibility for travel, having the right kennel or terrarium for your pet, these and every other small details have to be closely inspected for your pet to be safe. For that you need to contact your animal's veterinarian, he will check those details for you!
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> About the correct food
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Bugs, like other animals, including humans, like to eat the food that best satisfies their taste, but sometimes just because your pet eats something and enjoys it doesn't mean it meets their nutritional needs. It is usually recommended not to give leftovers to bugs by any means. To learn more about this contact your animal's veterinarian, he will certainly send you a diet for your pet, so that you can optimize your pet's lifespan.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> About the correct housing
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Every pet bug needs a place to live, usually terrariums, you as an owner need to make sure that the place where your animal spends most of its time is safe, if it is hygienic and clean, if it meets your pet's need for fun, if it don’t makes it feels alone and last but not least if there is more than enough space for the pet walk, run and hide if necessary. In order to be sure your terrarium is comfortable and accommodating to the bug you'd like to keep, it's important to do your research. Thoroughly investigating different bug types and their environmental requirements is the best way to ensure that you create the safest, most comfortable home for your bug.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> About the pet’s fun
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Animal loves to have fun, but bugs usually don’t really have this need. They enjoy their living, so if the environment he is living is great he is having fun by that. It’s very important to you to know your pet, pets also haves personalities, that means that what some kind of pet likes may not be what your pet enjoys to do.</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CgK-zM-YBH"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.96862745100000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N7G-6I-HmP"/>
+                    <connections>
+                        <outlet property="contentBugText" destination="Nw5-ts-vYY" id="koJ-be-pRp"/>
+                        <outlet property="headerBugImage" destination="j86-nY-ttQ" id="Nuq-YT-wqJ"/>
+                        <outlet property="titleBugLabel" destination="2gW-zF-QOE" id="0su-qQ-8d7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxC-L0-bFH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2902.898550724638" y="93.75"/>
+        </scene>
+        <!--Exotic-->
+        <scene sceneID="y66-6E-Swt">
+            <objects>
+                <viewController title="Exotic" id="jDo-YL-CbI" customClass="ExoticViewController" customModule="Hutan_Guide" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wfF-fm-HnM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="cHK-ZT-pcu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taking care of Exotic pets" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dt7-Se-aAa">
+                                <rect key="frame" x="20" y="100" width="300" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.1960784314" green="0.28235294119999998" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqu-Vj-Egn">
+                                <rect key="frame" x="20" y="240" width="374" height="553"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> About the Transport
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">The transport of pets is not a very easy task, having to make sure everything is legal, or your pet’s eligibility for travel, having the right kennel for your pet if your pet needs one, these and every other small details have to be closely inspected for your pet to be safe. For that you need to contact your animal's veterinarian, he will check those details for you!
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> About the correct food
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Animals, including humans, like to eat the food that best satisfies their taste, but sometimes just because your pet eats something and enjoys it doesn't mean it meets their nutritional needs. It is usually recommended not to give leftovers to any pet. To learn more about this contact your animal's veterinarian, he will certainly send you a diet for your pet, so that you can optimize your pet's lifespan.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" About the correct housing">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Every exotic pet needs a very especial place to live, you as an owner need to make sure that the place where your animal spends most of its time is safe, if it is hygienic and clean, if it meets your pet's need for fun, if it don’t makes it feels alone and last but not least if there is more than enough space for the pet walk, run, hide and swim if necessary. In order to be sure your cage, terrarium or aquarium is comfortable and accommodating to the animal you'd like to keep, it's important to do your research. Thoroughly investigating different exotic animal types and their environmental requirements is the best way to ensure that you create the safest, most comfortable home for your pet.
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="•">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> About the pet’s fun
+</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <font key="NSOriginalFont" size="16" name="SFCompactDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Pets loves to have fun, going out for a walk, having a partner to play and having a bunch of toys can be very entertaining for your pet. It’s very important to you to know your pet, pets also haves personalities, that means that what some kind of pet likes may not be what your pet enjoys to do.</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" size="14" name="SFCompactDisplay-Regular"/>
+                                            <font key="NSOriginalFont" size="14" name="SFCompactDisplay-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Clu-VZ-9hP"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.96862745100000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FlM-S1-0Nn"/>
+                    <connections>
+                        <outlet property="contentExoticText" destination="zqu-Vj-Egn" id="RNb-ch-AkK"/>
+                        <outlet property="headerExoticImage" destination="cHK-ZT-pcu" id="fRn-p2-XX6"/>
+                        <outlet property="titleExoticLabel" destination="Dt7-Se-aAa" id="zn2-it-D7j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zT2-cp-bAx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3605.7971014492755" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Botão grande" width="112" height="112"/>
+        <image name="Header" width="390" height="140"/>
+        <image name="button.bird" width="55" height="55"/>
+        <image name="button.bug" width="55" height="55"/>
+        <image name="button.fish" width="55" height="55"/>
+        <image name="button.paw" width="55" height="55"/>
+        <image name="button.snake" width="55" height="55"/>
+        <image name="button.star" width="55" height="55"/>
+        <image name="magnifyingglass" width="28" height="28"/>
+        <image name="newspaper.fill" width="28" height="28"/>
+        <image name="orangotango 1" width="1024" height="576"/>
+        <image name="paw.fill" width="28" height="28"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
