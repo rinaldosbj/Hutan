@@ -17,5 +17,5 @@ PS. I lost the last part of the code (I forgot to save, my last day of work :( b
 
 PS.2. I also coudn't upload the assets in a folder so it's mixed in with the content
 
-
-![Simulator Screen Shot - iPhone 11 - 2022-05-25 at 17 14 01](https://user-images.githubusercontent.com/107890806/174900948-4c62f2d4-3bfb-4e6e-b71b-8ea865fc720d.png)![launch@3x](https://user-images.githubusercontent.com/107890806/174901081-1845a3dc-1b2a-4fed-9e83-80f309878195.png)
+Here is a sneak peek of the Hutan guide
+![Simulator Screen Shot - iPhone 11 - 2022-05-25 at 17 14 01](https://user-images.githubusercontent.com/107890806/174900948-4c62f2d4-3bfb-4e6e-b71b-8ea865fc720d.png)
