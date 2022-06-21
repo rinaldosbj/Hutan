@@ -7,3 +7,5 @@ It was such a fun experience, I've learned a lot in the Academy, here is some st
 - Auto Layout
 - WalkThrough
 - Pet Caring
+
+PS. I lost the last part of the code (I forgot to save, my last day of wor :(, so I lost the code of the LaunchScrean and te WalkThrough, but the main part of the app (Hutan News and Hutan Guide) still there
