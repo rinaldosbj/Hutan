@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3AA3AC5283560F100BC7D58 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA3AC4283560F100BC7D58 /* GuideViewController.swift */; };
+		D3AA3AC728356A8000BC7D58 /* DomesticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA3AC628356A8000BC7D58 /* DomesticViewController.swift */; };
+		D3AA3AC928356AE800BC7D58 /* ReptileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA3AC828356AE800BC7D58 /* ReptileViewController.swift */; };
+		D3AA3ACB28356AFC00BC7D58 /* BirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA3ACA28356AFC00BC7D58 /* BirdViewController.swift */; };
+		D3AA3ACD28356B0B00BC7D58 /* AquaticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA3ACC28356B0B00BC7D58 /* AquaticViewController.swift */; };
+		D3AA3ACF28356B1E00BC7D58 /* BugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA3ACE28356B1E00BC7D58 /* BugViewController.swift */; };
+		D3AA3AD128356B3800BC7D58 /* ExoticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3AA3AD028356B3800BC7D58 /* ExoticViewController.swift */; };
+		D3F3B077283682A80025B20F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F3B076283682A80025B20F /* Launch Screen.storyboard */; };
+		D3FBC3032832991000D7F8D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FBC3022832991000D7F8D9 /* AppDelegate.swift */; };
+		D3FBC3052832991000D7F8D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FBC3042832991000D7F8D9 /* SceneDelegate.swift */; };
+		D3FBC3072832991000D7F8D9 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FBC3062832991000D7F8D9 /* NewsViewController.swift */; };
+		D3FBC30A2832991000D7F8D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3FBC3082832991000D7F8D9 /* Main.storyboard */; };
+		D3FBC30C2832991200D7F8D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3FBC30B2832991200D7F8D9 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3AA3AC4283560F100BC7D58 /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		D3AA3AC628356A8000BC7D58 /* DomesticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomesticViewController.swift; sourceTree = "<group>"; };
+		D3AA3AC828356AE800BC7D58 /* ReptileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReptileViewController.swift; sourceTree = "<group>"; };
+		D3AA3ACA28356AFC00BC7D58 /* BirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdViewController.swift; sourceTree = "<group>"; };
+		D3AA3ACC28356B0B00BC7D58 /* AquaticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaticViewController.swift; sourceTree = "<group>"; };
+		D3AA3ACE28356B1E00BC7D58 /* BugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugViewController.swift; sourceTree = "<group>"; };
+		D3AA3AD028356B3800BC7D58 /* ExoticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExoticViewController.swift; sourceTree = "<group>"; };
+		D3F3B076283682A80025B20F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D3FBC2FF2832991000D7F8D9 /* Hutan Guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hutan Guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3FBC3022832991000D7F8D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3FBC3042832991000D7F8D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D3FBC3062832991000D7F8D9 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		D3FBC3092832991000D7F8D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3FBC30B2832991200D7F8D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3FBC3102832991200D7F8D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3FBC2FC2832991000D7F8D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3FBC2F62832991000D7F8D9 = {
+			isa = PBXGroup;
+			children = (
+				D3FBC3012832991000D7F8D9 /* Hutan Guide */,
+				D3FBC3002832991000D7F8D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3FBC3002832991000D7F8D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3FBC2FF2832991000D7F8D9 /* Hutan Guide.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3FBC3012832991000D7F8D9 /* Hutan Guide */ = {
+			isa = PBXGroup;
+			children = (
+				D3FBC3022832991000D7F8D9 /* AppDelegate.swift */,
+				D3FBC3042832991000D7F8D9 /* SceneDelegate.swift */,
+				D3FBC3062832991000D7F8D9 /* NewsViewController.swift */,
+				D3AA3AC4283560F100BC7D58 /* GuideViewController.swift */,
+				D3AA3AC628356A8000BC7D58 /* DomesticViewController.swift */,
+				D3AA3AC828356AE800BC7D58 /* ReptileViewController.swift */,
+				D3AA3ACA28356AFC00BC7D58 /* BirdViewController.swift */,
+				D3AA3ACC28356B0B00BC7D58 /* AquaticViewController.swift */,
+				D3AA3ACE28356B1E00BC7D58 /* BugViewController.swift */,
+				D3AA3AD028356B3800BC7D58 /* ExoticViewController.swift */,
+				D3FBC3082832991000D7F8D9 /* Main.storyboard */,
+				D3FBC30B2832991200D7F8D9 /* Assets.xcassets */,
+				D3F3B076283682A80025B20F /* Launch Screen.storyboard */,
+				D3FBC3102832991200D7F8D9 /* Info.plist */,
+			);
+			path = "Hutan Guide";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3FBC2FE2832991000D7F8D9 /* Hutan Guide */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3FBC3132832991200D7F8D9 /* Build configuration list for PBXNativeTarget "Hutan Guide" */;
+			buildPhases = (
+				D3FBC2FB2832991000D7F8D9 /* Sources */,
+				D3FBC2FC2832991000D7F8D9 /* Frameworks */,
+				D3FBC2FD2832991000D7F8D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hutan Guide";
+			productName = "Hutan Guide";
+			productReference = D3FBC2FF2832991000D7F8D9 /* Hutan Guide.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3FBC2F72832991000D7F8D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					D3FBC2FE2832991000D7F8D9 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D3FBC2FA2832991000D7F8D9 /* Build configuration list for PBXProject "Hutan Guide" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3FBC2F62832991000D7F8D9;
+			productRefGroup = D3FBC3002832991000D7F8D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3FBC2FE2832991000D7F8D9 /* Hutan Guide */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3FBC2FD2832991000D7F8D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3FBC30C2832991200D7F8D9 /* Assets.xcassets in Resources */,
+				D3F3B077283682A80025B20F /* Launch Screen.storyboard in Resources */,
+				D3FBC30A2832991000D7F8D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3FBC2FB2832991000D7F8D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3FBC3072832991000D7F8D9 /* NewsViewController.swift in Sources */,
+				D3AA3ACB28356AFC00BC7D58 /* BirdViewController.swift in Sources */,
+				D3AA3AC5283560F100BC7D58 /* GuideViewController.swift in Sources */,
+				D3AA3AC928356AE800BC7D58 /* ReptileViewController.swift in Sources */,
+				D3AA3AD128356B3800BC7D58 /* ExoticViewController.swift in Sources */,
+				D3FBC3032832991000D7F8D9 /* AppDelegate.swift in Sources */,
+				D3AA3ACD28356B0B00BC7D58 /* AquaticViewController.swift in Sources */,
+				D3AA3AC728356A8000BC7D58 /* DomesticViewController.swift in Sources */,
+				D3AA3ACF28356B1E00BC7D58 /* BugViewController.swift in Sources */,
+				D3FBC3052832991000D7F8D9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D3FBC3082832991000D7F8D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3FBC3092832991000D7F8D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3FBC3112832991200D7F8D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3FBC3122832991200D7F8D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3FBC3142832991200D7F8D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B6XWN7H84M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hutan Guide/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.ufpe.cin.academy-rsbj.Hutan-Guide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D3FBC3152832991200D7F8D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B6XWN7H84M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Hutan Guide/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "br.ufpe.cin.academy-rsbj.Hutan-Guide";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3FBC2FA2832991000D7F8D9 /* Build configuration list for PBXProject "Hutan Guide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3FBC3112832991200D7F8D9 /* Debug */,
+				D3FBC3122832991200D7F8D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3FBC3132832991200D7F8D9 /* Build configuration list for PBXNativeTarget "Hutan Guide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3FBC3142832991200D7F8D9 /* Debug */,
+				D3FBC3152832991200D7F8D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3FBC2F72832991000D7F8D9 /* Project object */;
+}
